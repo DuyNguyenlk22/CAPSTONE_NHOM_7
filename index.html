@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Masterwork</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,11 +23,134 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
-    <header></header>
-    <section class="carousel"></section>
-    <section class="tools"></section>
+  <body id="main">
+    <header class="fixed-top py-3">
+      <div class="container header__content">
+        <div class="header__logo">
+          <a href="#">
+            <i class="fa-regular fa-handshake"></i>
+            <span>masterwork</span>
+          </a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Pages</a
+            >
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Blog Post</a>
+              <a class="dropdown-item" href="#">Landing page</a>
+              <a class="dropdown-item" href="#">404 page</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <div class="icon__search">
+            <i class="fa fa-search"></i>
+          </div>
+          <button type="button" class="btn" id="main__btn">
+            Schedule a Demo
+          </button>
+          <div class="header__theme mx-auto">
+            <button class="btn" id="switchButton" title="Click to switch theme">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-regular fa-moon"></i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+    <section class="carousel">
+      <div class="container carousel__container">
+        <div class="carousel__content">
+          <h1>
+            We Execute Our Ideas <br />
+            From Start to Finish
+          </h1>
+          <p>
+            Building a beautiful interactive business for <br />
+            startups and innovative companies.
+          </p>
+          <button type="button" class="btn btn-outline-primary">
+            GET STARTED
+          </button>
+        </div>
+        <div class="carousel__img">
+          <img src="./img/carousel.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="tools">
+      <div class="container tools__container">
+        <div class="tools_title">
+          <p>WHY CHOOSE US</p>
+          <h2>Tools for business startup to professional</h2>
+          <span
+            >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.</span
+          >
+        </div>
+        <div class="tools__content row">
+          <div class="tools__item col-4">
+            <div class="tools__card">
+              <img src="./img/s1.png" alt="" class="img-fluid" />
+              <h3>Interactive</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                impedit vitae quae sapiente deserunt iusto.
+              </p>
+            </div>
+          </div>
+          <div class="tools__item col-4">
+            <div class="tools__card">
+              <img src="./img/s2.png" alt="" class="img-fluid" />
+              <h3>Business</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                impedit vitae quae sapiente deserunt iusto.
+              </p>
+            </div>
+          </div>
+          <div class="tools__item col-4">
+            <div class="tools__card">
+              <img src="./img/s3.png" alt="" class="img-fluid" />
+              <h3>Inspiration</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                impedit vitae quae sapiente deserunt iusto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="about"></section>
     <section class="banner"></section>
     <section class="general"></section>
@@ -45,5 +175,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- DARK THEME JS -->
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("main").classList.toggle("dark");
+      };
+    </script>
   </body>
 </html>
