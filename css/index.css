@@ -151,6 +151,7 @@ header .nav {
 .fa-sun,
 .fa-moon {
   transform: rotate(-30deg);
+  width: 10px;
 }
 #switchButton {
   box-shadow: 0 0 0 0.2rem transparent;
