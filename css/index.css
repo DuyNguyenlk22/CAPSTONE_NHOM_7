@@ -337,3 +337,40 @@ header .nav {
 .banner__item:hover {
   box-shadow: none;
 }
+
+/* start general */
+
+.general__content {
+  max-width: 550px;
+}
+
+.general__content h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+
+}
+.general__content p {
+  color: #fff;
+}
+.general__content .them-button {
+  display: inline-block;
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px 30px;
+}
+
+
+#general {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url("/img/1.jpg");
+  background-repeat: initial;
+  background-size: cover;
+  background-position: center;
+  min-height: 480px;
+  align-items: center;
+  padding: 80px 0px;
+  background-attachment: fixed;
+}
