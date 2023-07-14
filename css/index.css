@@ -273,23 +273,26 @@ header .nav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
 }
 
-
 /*  start about */
 
 .about .row p {
   color: #dc4f72;
+  font-weight: 700;
 }
-.row img {
+.about h2 {
+  letter-spacing: 1.5px;
+}
+.about__content .row img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
   transform: translateY(0);
   transition: 0.4s;
 }
-.row img:hover {
+.about__content .row img:hover {
   transform: translateY(-10px);
 }
-.row .read-more {
+.about__content .row .read-more {
   display: inline-block;
   line-height: 52px;
   font-weight: 700;
@@ -299,26 +302,26 @@ header .nav {
   text-transform: uppercase;
   cursor: pointer;
 }
-.btn-primary { 
+.about__content .btn-primary {
   color: white;
   background-color: #dc4f72;
   border-color: #dc4f72;
+  transition: all 0.5s;
 }
-.btn:hover {
-  background-color: crimson;
-  border-color: crimson;
+.about__content .btn:hover {
+  background-color: #d62f58;
+  border-color: #d62f58;
 }
 
+/* start number */
 
-/* start banner */
-
-.banner__item h4 {
+.number__item h4 {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   color: #000;
 }
-.banner__item p.counter {
+.number__item p.counter {
   font-size: 50px;
   line-height: 1;
   font-weight: 700;
@@ -326,34 +329,33 @@ header .nav {
   margin-bottom: 15px;
   margin-top: 10px;
 }
-.banner__item {
+.number__item {
   background-color: #fff;
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 1px solid #fff;
-  transition: 0.4s;
+  transition: 0.5s;
 }
-.banner__item:hover {
-  box-shadow: none;
+.number__item:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
 }
 
-/* start general */
+/* start banner */
 
-.general__content {
+.banner__content {
   max-width: 550px;
 }
 
-.general__content h2 {
+.banner__content h2 {
   color: #fff;
   font-size: 30px;
   font-weight: 800;
-
 }
-.general__content p {
+.banner__content p {
   color: #fff;
 }
-.general__content .them-button {
+.banner__content .them-button {
   display: inline-block;
   line-height: 52px;
   font-weight: 700;
@@ -361,11 +363,12 @@ header .nav {
   text-transform: uppercase;
   margin: 0px;
   padding: 0px 30px;
+  transition: all 0.5s;
 }
 
-
-#general {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url("/img/1.jpg");
+#banner {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+    url("/img/1.jpg");
   background-repeat: initial;
   background-size: cover;
   background-position: center;
