@@ -28,6 +28,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- my css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -106,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="tools">
+    <section class="tools py-5">
       <div class="container tools__container">
         <div class="tools_title">
           <p>WHY CHOOSE US</p>
@@ -151,8 +156,71 @@
         </div>
       </div>
     </section>
-    <section class="about"></section>
-    <section class="banner"></section>
+    <section class="about bg-light py-5">
+      <div class="container about__content">
+        <div class="row align-text-center">
+          <div class="col-sm-6">
+            <p>ABOUT OUR COMPANY</p>
+            <h2 class="h2 font-weight-bold text-dark mb-3">
+              The Best Choice For Your Successful Business!
+            </h2>
+            <span class="mb-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
+              repellendus illum harum quam nihil totam reprehenderit! Ut sed
+              eveniet quos! Asperiores officia, repudiandae similique
+              reiciendis, ab est magnam esse nesciunt ea fuga facere
+              voluptatem.</span
+            >
+            <br />
+            <a href="#" class="btn btn-primary read-more mt-5">read more</a>
+          </div>
+
+          <div class="col-sm-6">
+            <img
+              src="./img/about_picture.jpg"
+              alt=""
+              class="img-fluid shadow img-curve"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="banner__item">
+              <h4>Happy Customers</h4>
+              <p class="counter">10458</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="banner__item">
+              <h4>Happy Customers</h4>
+              <p class="counter">890</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="banner__item">
+              <h4>Happy Customers</h4>
+              <p class="counter">5345</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="general"></section>
     <section class="projects"></section>
     <section class="clients"></section>
@@ -175,6 +243,28 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- counter up -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- waypoints -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".counter").counterUp({
+        delay: 10,
+        time: 2000,
+      });
+    </script>
+
     <!-- DARK THEME JS -->
     <script>
       document.getElementById("switchButton").onclick = function () {
