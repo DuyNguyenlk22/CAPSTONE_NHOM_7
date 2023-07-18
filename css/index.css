@@ -26,28 +26,25 @@ header {
   align-items: center;
 }
 .header__logo a {
-  font-size: 1.8rem;
+  font-size: 1.625rem;
   color: #dc4f72;
   text-decoration: none;
-  width: 25%;
-}
-.header__logo span {
-  text-transform: capitalize;
-  font-weight: 500;
-}
-header .nav {
-  align-items: center;
-  width: 65%;
 }
 
+.header__logo span {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+header .navbar {
+  align-items: center;
+}
 .nav-item {
-  display: inline-block;
-  margin-left: 1.875rem;
+  margin-left: 1.8rem;
 }
 .nav-link {
   position: relative;
   padding: 0;
-  color: #5a5a5a;
+  color: #2c3038;
   font-size: 1rem;
   transition: all 0.5s;
 }
@@ -63,8 +60,11 @@ header .nav {
   background-color: #dc4f72;
   transition: all 0.5s;
 }
-.nav-item:hover .nav-link,
-.nav-link.active {
+.navbar .nav-link#active {
+  color: #dc4f72;
+}
+
+.nav-item:hover .nav-link {
   color: #dc4f72;
 }
 .nav-item:hover .nav-link::before {
@@ -94,7 +94,7 @@ header .nav {
   width: 0px;
   transition: all 0.5s;
 }
-.nav .dropdown-item:hover::before {
+.navbar .dropdown-item:hover::before {
   width: 1.56rem;
 }
 .dropdown-item:hover {
@@ -102,14 +102,14 @@ header .nav {
   color: #dc4f72;
 }
 
-.nav .icon__search i {
+.navbar .icon__search i {
   font-size: 1rem;
   color: #5a5a5a;
   font-weight: 900;
   opacity: 0.7;
   height: 2.5rem;
   width: 2.5rem;
-  margin-left: 25px;
+  margin-left: 0.5rem;
   border-radius: 50%;
   line-height: 2.3rem;
   text-align: center;
@@ -122,11 +122,11 @@ header .nav {
   background-color: #191c1d;
   border: 1px solid #333;
 }
-.nav .icon__search:hover i {
+.navbar .icon__search:hover i {
   color: #000;
 }
-.nav button#main__btn {
-  margin: 0 1rem;
+.navbar button#main__btn {
+  margin: 0 0.5rem;
   padding: 0.9rem 1.875rem;
   border: 1px solid #dc4f72;
   border-radius: 4px;
@@ -136,11 +136,11 @@ header .nav {
   font-weight: 500;
   transition: all 0.5s;
 }
-.nav button#main__btn:hover {
+.navbar button#main__btn:hover {
   background-color: #dc4f72;
   color: #fff;
 }
-.nav button#main__btn:focus {
+.navbar button#main__btn:focus {
   outline: thin dotted;
   box-shadow: 0 0 0 0.2rem transparent;
 }
@@ -150,6 +150,7 @@ header .nav {
 
 .fa-sun,
 .fa-moon {
+  margin-left: 0.5rem;
   transform: rotate(-30deg);
   width: 10px;
 }
@@ -190,17 +191,15 @@ header .nav {
 
 /* START CAROUSEL */
 .carousel {
-  padding-top: 6.25rem;
+  padding-top: 12rem;
   background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92)),
     url(../img/banner_carousel.jpg);
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.carousel__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.carousel__content {
+  margin-top: 4rem;
 }
 .carousel__content h1 {
   font-size: 3.125rem;
@@ -448,20 +447,20 @@ header .nav {
 }
 .general__right i {
   transform: rotate(180deg);
+  transition: 0.3s;
 }
 .general__right h3 {
   font-size: 1.25rem;
   color: #2c3038;
   margin: 0;
   line-height: 1;
-  display: block;
 }
 .general__right p {
   position: relative;
   overflow: hidden;
   max-height: 800px;
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translateY(0);
   margin-top: 0.875rem;
   z-index: 2;
   transition: all 0.3s;
@@ -470,7 +469,7 @@ header .nav {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
-  transform: translate(0, 50%);
+  transform: translateY(50%);
 }
 
 /* START PROJECTS */
