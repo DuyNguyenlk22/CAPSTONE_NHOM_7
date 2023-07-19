@@ -746,3 +746,22 @@ header .navbar {
 .footer__top li:hover {
   color: #dc4f72;
 }
+.footer__bottom i {
+  margin: 0 10px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.footer__bottom i:hover {
+  color: #dc4f72;
+}
+.footer__bottom .right a{
+  color: #000;
+}
+.footer__bottom .right a:hover {
+  color: #dc4f72;
+  text-decoration: none;
+}
+.footer__bottom .left a {
+  text-decoration: none;
+  color:#2C3038;
+}
