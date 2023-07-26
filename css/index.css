@@ -982,3 +982,53 @@ header .navbar {
     margin-top: 50px;
   }
 }
+/**********RESPONSIVE UPDATE**************/
+
+/* Mobile : width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  /* about */
+  .about__content .row .read-more {
+    line-height: 44px;
+    padding: 0px 20px;
+  }
+  .about__content .row img {
+    margin-top: 60px;
+  }
+  /* number */
+  .number__item {
+    margin: 10px 0px;
+  }
+  .number__item p.counter {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  /* banner */
+  .banner__content {
+    max-width: 532px;
+  }
+  .banner__content .them-button {
+    line-height: 44px;
+    padding: 0px 20px;
+  }
+  /* client */
+  .clients__item {
+    width: 100%;
+  }
+  
+}
+
+/* Tablet : width >= 559px and width < 1024px */
+@media only screen and (min-width: 34.9375em) and (max-width: 63.9375em) {
+  /* about */
+
+  /* number */
+  .col-sm-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* banner */
+  .banner__content .them-button {
+    line-height: 56px;
+    padding: 0px 30px;
+  }
+}
