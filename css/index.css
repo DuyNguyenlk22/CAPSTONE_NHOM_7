@@ -817,7 +817,17 @@ header .navbar {
   }
   .navbar .icon__search {
     margin: 8px 0;
-    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header .navbar .icon__search i {
+    margin-left: 0;
+  }
+  .dark .navbar .icon__search i:hover {
+    color: #eee;
+    opacity: 1;
   }
   .navbar .btn__wrap {
     text-align: center;
@@ -831,19 +841,19 @@ header .navbar {
     width: 100%;
   }
   .dropdown-item::before {
-    left: 41%;
-  }
-  .dropdown__item::before {
-    left: 39%;
-  }
-  .dropdown__item1::before {
-    left: 42%;
-  }
-  .nav-link::before {
     left: 45%;
   }
+  .dropdown__item::before {
+    left: 43.5%;
+  }
+  .dropdown__item1::before {
+    left: 45.5%;
+  }
+  .nav-link::before {
+    left: 47%;
+  }
   .nav__link::before {
-    left: 43%;
+    left: 46%;
   }
   /* CAROUSEL */
   .carousel {
