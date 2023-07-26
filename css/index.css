@@ -586,7 +586,7 @@ header .navbar {
 }
 .clients .testimonials {
   width: auto;
-  height: 550px;
+  height: auto;
   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.8)),
     url(../img/b2.jpg);
   background-repeat: no-repeat;
@@ -594,7 +594,9 @@ header .navbar {
   background-size: cover;
   background-attachment: fixed;
 }
-
+.clients .slick-dots {
+  bottom: -35px;
+}
 .slick-dots li.slick-active button:before {
   color: #d62f58;
 }
@@ -961,6 +963,24 @@ header .navbar {
   .general__title h2 {
     font-size: 32px;
     line-height: 30px;
+  }
+  /* clients */
+
+  .clients__title h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .clients__item {
+    grid-template-columns: auto;
+    padding-bottom: 0;
+    gap: 20px;
+  }
+  .img__circle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .message {
+    text-align: center;
   }
 }
 @media screen and (max-width: 575.98px) {

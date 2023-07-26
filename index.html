@@ -412,7 +412,7 @@
               aria-labelledby="nav-home-tab"
             >
               <div class="row" id="projectRow_1">
-                <div class="tab__left col-lg-6 col-sm-12">
+                <div class="tab__left col-lg-6 col-md-6 col-sm-12">
                   <h3>Why a visual identity system is more memorable</h3>
                   <p class="my-4">
                     Lorem ipsum dolor sit, adipisicing elit repudiandae
@@ -423,7 +423,7 @@
                   </p>
                   <button class="btn mt-3">KNOW MORE</button>
                 </div>
-                <div class="tab__right col-lg-6 col-sm-12">
+                <div class="tab__right col-lg-6 col-md-6 col-sm-12">
                   <img src="./img/project_one.jpg" alt="" />
                 </div>
               </div>
@@ -435,11 +435,11 @@
               aria-labelledby="nav-profile-tab"
             >
               <div class="row" id="projectRow_2">
-                <div class="tab__left col-lg-6 col-sm-12">
+                <div class="tab__left col-lg-6 col-md-6 col-sm-12">
                   <img src="./img/project_two.jpg" alt="" />
                 </div>
 
-                <div class="tab__right col-lg-6 col-sm-12">
+                <div class="tab__right col-lg-6 col-md-6 col-sm-12">
                   <h3>Make website that looks Lorem, ipsum dolor.</h3>
                   <p class="my-4">
                     Lorem ipsum dolor sit, adipisicing elit repudiandae
@@ -459,7 +459,7 @@
               aria-labelledby="nav-contact-tab"
             >
               <div class="row" id="projectRow_3">
-                <div class="tab__left col-lg-6 col-sm-12">
+                <div class="tab__left col-lg-6 col-md-6 col-sm-12">
                   <h3>Why a visual identity system is more memorable</h3>
                   <p class="my-4">
                     Lorem ipsum dolor sit, adipisicing elit repudiandae
@@ -470,7 +470,7 @@
                   </p>
                   <button class="btn mt-3">KNOW MORE</button>
                 </div>
-                <div class="tab__right col-lg-6 col-sm-12">
+                <div class="tab__right col-lg-6 col-md-6 col-sm-12">
                   <img src="./img/project_three.jpg" alt="" />
                 </div>
               </div>
@@ -494,7 +494,7 @@
               </span>
             </div>
             <div class="row mt-4">
-              <div class="col-12 pb-5">
+              <div class="col-md-12 mx-auto pb-5">
                 <div class="clients__list">
                   <div class="clients__item mx-2">
                     <div class="img__circle">
@@ -741,6 +741,31 @@
           infinite: true,
           slidesToShow: 2,
           slidesToScroll: 2,
+          responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
       });
     </script>
