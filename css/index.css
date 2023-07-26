@@ -602,7 +602,8 @@ header .navbar {
 }
 
 .slick-dots li button::before {
-  color: #f7f9fc;
+  color: #eee;
+  opacity: 1;
   font-size: 10px;
 }
 .slick-dots li button:hover:before {
@@ -900,6 +901,15 @@ header .navbar {
   .number__item {
     margin: 10px 0px;
   }
+  /* footer */
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__bottom .right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   /* header */
@@ -963,6 +973,15 @@ header .navbar {
   .projects .tab__right {
     padding-top: 30px;
   }
+  /* activity */
+  .activity__title h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .activity__button .demo,
+  .activity__button .get-started {
+    padding: 12px 20px;
+  }
 }
 @media screen and (max-width: 664px) {
   /* header */
@@ -1006,6 +1025,11 @@ header .navbar {
   }
   .message {
     text-align: center;
+  }
+  /* activity */
+  .activity__title h3 {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -1076,7 +1100,7 @@ header .navbar {
   /* about */
 
   /* number */
-  .col-sm-4 {
+  .number .col-sm-4 {
     flex: 0 0 50%;
     max-width: 50%;
   }
