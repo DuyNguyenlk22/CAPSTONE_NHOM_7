@@ -18,7 +18,7 @@ header {
   background-color: #fff;
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
   font-size: 1.625rem;
   color: #dc4f72;
   text-decoration: none;
@@ -27,6 +27,9 @@ header {
 .navbar-brand span {
   text-transform: capitalize;
   font-weight: 700;
+}
+.navbar-brand :hover {
+  color: #dc4f72;
 }
 header .navbar {
   justify-content: space-between;
@@ -96,6 +99,7 @@ header .navbar {
   width: 0px;
   transition: all 0.5s;
 }
+
 .navbar .dropdown-item:hover::before {
   width: 1.56rem;
 }
@@ -773,6 +777,14 @@ header .navbar {
     padding-left: 20px;
     padding-right: 20px;
   }
+  /* project */
+  .projects__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects .projects__title span {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 991.98px) {
   /* HEADER */
@@ -857,6 +869,20 @@ header .navbar {
   .tools__content .tools__card3 {
     margin-bottom: 30px;
   }
+  /* general */
+  .general {
+    padding-top: 50px;
+  }
+  /* project */
+  .projects__container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .projects .tab__left h3 {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   /* carousel */
@@ -881,6 +907,35 @@ header .navbar {
     width: 90%;
     margin: 0 auto;
   }
+  /* general */
+  .general__title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .general__title h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .general__right {
+    padding-left: 15px;
+    margin-top: 40px;
+  }
+  /* project */
+  .projects__title {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .projects__title h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .projects__content .nav .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+  .projects .tab__right {
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 664px) {
   /* tools */
@@ -891,6 +946,11 @@ header .navbar {
   .tools_title {
     width: 95%;
     margin: 0 auto;
+  }
+  /* general */
+  .general__title h2 {
+    font-size: 32px;
+    line-height: 30px;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -904,6 +964,7 @@ header .navbar {
     width: 100%;
     margin: 0 auto;
   }
+  /* about */
 }
 @media screen and (min-width: 767.98px) and (max-width: 991.98px) {
   /* Tools */
