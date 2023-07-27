@@ -575,6 +575,7 @@ header .navbar {
   right: 0;
   font-size: 30px;
   color: #b7b7b7;
+  opacity: 0.6;
 }
 .message .name h4 {
   font-size: 18px;
@@ -780,6 +781,7 @@ header .navbar {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   /* project */
   .projects__container {
     width: 80%;
@@ -911,7 +913,7 @@ header .navbar {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   /* header */
   .dropdown-item::before {
     left: 41vw;
@@ -1031,6 +1033,11 @@ header .navbar {
     font-size: 32px;
     line-height: 40px;
   }
+  /* footer */
+  .form-sign .btn {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 575.98px) {
   /* header */
@@ -1059,6 +1066,20 @@ header .navbar {
   /* Tools */
   .tools__content .tools__card3 {
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 378px) {
+  /* activity */
+  .activity__button {
+    display: flex;
+  }
+  .activity__button .demo,
+  .activity__button .get-started {
+    padding: 10px 14px;
+  }
+  /* footer */
+  .form-sign .btn {
+    width: 20%;
   }
 }
 /**********RESPONSIVE UPDATE**************/
